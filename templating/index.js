@@ -6,7 +6,7 @@ const path = require('path');
 
 function copy(fin){
     const sourcePath = path.join(__dirname, CONTENT, fin); // Assuming the profile.png is in a directory named CONTENT
-    const destinationPath = path.join(__dirname, '..', fin); // Assuming you want to copy it to the parent directory
+    const destinationPath = path.join(__dirname, '../output/', fin); // Assuming you want to copy it to the parent directory
     fs.copyFile(sourcePath, destinationPath, (err) => {
         if (err) {
             console.error('Error copying file:', err);
@@ -30,7 +30,7 @@ const template = fs.readFileSync('template.ejs', 'utf8');
 const html = ejs.render(template, { profileContent: profileContent, contentContent: contentContent });
 
 // Write the HTML to a file
-fs.writeFileSync('../index.html', html);
+fs.writeFileSync('../output/index.html', html);
 
 copy("style.css");
 copy("profile.png");
