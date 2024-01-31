@@ -34,3 +34,4 @@ fs.writeFileSync('../output/index.html', html);
 
 copy("style.css");
 copy("profile.png");
+copy("robots.txt");
