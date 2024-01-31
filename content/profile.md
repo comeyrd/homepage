@@ -1,8 +1,10 @@
-![](profile.png)
-# Côme 
+![Profile Picture](profile.png)
+## Côme Eyraud
 
 Telecom Paris Student and part time software enginner @ Dassault Systèmes
 
-[my Github](https://www.github.com/comeyrd)
+Enginnering passionate, always ready to learn new skills and build new things
 
-[my LinkedIn](https://www.linkedin.com/in/come-eyraud)
+my Github : [comeyrd](https://www.github.com/comeyrd)
+
+my [LinkedIn](https://www.linkedin.com/in/come-eyraud)
