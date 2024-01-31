@@ -1,20 +1,19 @@
 
-# Projects : 
+# Personal projects : 
 Most of the things i do for fun are public on my github, here is a non exaustive list of one of my favorite projects
 
-## textcompressor
-[repo link](https://github.com/comeyrd/textcompressor)
+## [Text Compressor](https://github.com/comeyrd/textcompressor)
 
 A simple c++ text compression program.
 
-## AccessControl
-[repo link](https://github.com/comeyrd/Accesscontrol)
+## [AccessControl](https://github.com/comeyrd/Accesscontrol)
+
 
 Javascript modules to manage authentification, users, their informations and administration.
 Basically a wrapper over SQL to do simple tasks.
 
-## Mportal
-[repo link](https://github.com/comeyrd/MitiAuth-Portal)
+## [Mportal](https://github.com/comeyrd/MitiAuth-Portal)
+
 
 A website using the AccessControl modules.
 The goal is to have a base website with authentication, basic administration and access control depending on the type of users.
@@ -28,10 +27,14 @@ With the logins :
 - user:user
 - admin:admin
 
-## Fupload
-[repo link](https://github.com/comeyrd/web-simplefile)
+## [Fupload](https://github.com/comeyrd/web-simplefile)
 
 The bare base for a single file per user sharing website, waiting for the 'end' of Mportal to fork it and finish this one
+
+##  [Parcel locator](https://github.com/comeyrd/parcel-locator)
+
+A Simple website for relay points to locate clients parcels,
+waiting for the 'end' of Mportal to fork it and finish this
 
 ## Api's
 
