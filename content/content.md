@@ -1,12 +1,3 @@
-# Comeyrd Homepage
-## Who am I ?
-
-Telecom Paris Student and part time software enginner @ Dassault Systèmes
-
-[my Github](https://www.github.com/comeyrd)
-
-[my LinkedIn](https://www.linkedin.com/in/come-eyraud)
-
 
 # Projects : 
 Most of the things i do for fun are public on my github, here is a non exaustive list of one of my favorite projects
@@ -30,8 +21,8 @@ The goal is to have a base website with authentication, basic administration and
 When finished, could be used as base to create any project.
 
 To test the project : 
+[https://mportal.ceyraud.com](https://mportal.ceyraud.com)
 
-https://mportal.ceyraud.com
 
 With the logins : 
 - user:user
@@ -44,7 +35,7 @@ The bare base for a single file per user sharing website, waiting for the 'end' 
 
 ## Api's
 
-Not a github repo yet, but working on a express boiler boiler plate to create REST api's over SQL easily.
+Not a github repo yet, but working on a express boiler plate to create REST api's over SQL easily.
 
 ## Other random projects : 
 
