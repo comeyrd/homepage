@@ -1,4 +1,4 @@
-![Profile Picture](profile.png)
+[![Profile Picture](profile.png)](https://ceyraud.com)
 ## Côme Eyraud
 
 Telecom Paris Student and part time software enginner @ Dassault Systèmes

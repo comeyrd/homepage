@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "showdown": "^2.1.0"
+    "ejs": "^3.1.9",
+    "showdown": "^2.1.0",
+    "sync-request": "^6.1.0"
   }
 }
