@@ -5,9 +5,9 @@
         "url": "tracefront"
     },
     {
-        "Title": "Rust Websocket Server",
+        "Title": "Rust Websocket Server : Traceserver",
         "base": "comeyrd",
-        "url": "rust-ws-server"
+        "url": "traceserver"
     },
     {
         "Title": "Flight Comparator Quantux Analysis",
