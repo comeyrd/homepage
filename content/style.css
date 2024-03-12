@@ -24,7 +24,6 @@ body {
 
 .main-content {
     flex: 4;
-    /* Adjust this value to use the space of the two instances */
     padding: 30px;
     background-color: #fff;
     border-radius: 8px;
@@ -35,17 +34,39 @@ body {
     flex: 1;
 }
 
-/* Style for links */
 a {
     color: #007bff;
-    /* Link color */
     text-decoration: none;
-    /* Remove underline */
     transition: color 0.3s;
-    /* Smooth color transition */
 }
 
 a:hover {
     color: #0056b3;
-    /* Change color on hover */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    background-color: #f0f0f0; 
+}
+
+.nav-link:hover {
+    background-color: #ddd; 
+}
+.github-link {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 3px 6px; 
+    border-radius: 3px; 
+    background-color: transparent; 
+    border: 1px solid #555; 
+}
+
+.github-link:hover {
+    background-color: #f0f0f0; 
+    color: #555; 
 }

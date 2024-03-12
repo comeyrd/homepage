@@ -63,27 +63,27 @@ function getReadme(url) {
 
 // Parse Markdown to HTML
 const profileContent = converter.makeHtml(rf("profile.md"));
-const headerContent = converter.makeHtml(rf("header.md"));
+const headerContent = "<a class='nav-link' href='./index.html'>Home</a><br>" + converter.makeHtml(rf("header.md"));
 const projectsContent = converter.makeHtml(rf("projects.md"));
-
 const projectsData = JSON.parse(rf("projects.json"));
 
-projectsArray = [];
+let projectsArray = [];
 projectsData.forEach(project => {
-    newobj={};
+    let newobj={};
     newobj['Title'] = project.Title;
     newobj['about'] = converter.makeHtml("### ["+project.Title +"](./"+project.url+".html)\n\n" + getAbout(project.base+"/"+project.url));
     newobj['readme'] = converter.makeHtml(getReadme(project.base+"/"+project.url));
-    newobj['gitlink']="<a href='https://www.github.com/"+project.base+"/"+project.url+"'>Link of the repo</a>";
+    newobj['header']="<a class='nav-link' href='./index.html'>Home</a> / <a href='#' class='nav-link'>"+project.Title+"</a><br>";
     const template = fs.readFileSync('index.ejs', 'utf8');
-    const html = ejs.render(template, { profileContent: profileContent, headerContent:newobj['gitlink'] ,projectsContent: newobj['readme'],projectsArray:[]});
+    newobj['git-link']="<a href='https://www.github.com/"+project.base+"/"+project.url+"' class='github-link' >Source Code on GitHub</a>";
+    const html = ejs.render(template, { profileContent: profileContent, headerContent:newobj['header'] ,projectsContent: newobj['readme'],projectsArray:[],footerContent:newobj['git-link']});
     fs.writeFileSync('../output/'+project.url+".html", html);
     projectsArray.push(newobj);
 });
 
 // Render HTML using EJS template
 const template = fs.readFileSync('index.ejs', 'utf8');
-const html = ejs.render(template, { profileContent: profileContent, headerContent: headerContent ,projectsContent:projectsContent,projectsArray:projectsArray});
+const html = ejs.render(template, { profileContent: profileContent, headerContent: headerContent ,projectsContent:projectsContent,projectsArray:projectsArray,footerContent:""});
 fs.writeFileSync('../output/index.html', html);
 
 projectsArray.forEach(project=>{
