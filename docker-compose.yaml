@@ -1,0 +1,19 @@
+services:
+  homepage-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile.builder
+    volumes:
+      - homepage-vol:/usr/src/app/output
+    command: ["sh", "-c", "rm -rf /usr/src/app/output/* && node index.js"]
+    entrypoint: ""
+    
+  homepage-server:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - homepage-vol:/usr/share/nginx/html:ro
+
+volumes:
+  homepage-vol:
